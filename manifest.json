@@ -1,0 +1,22 @@
+{
+    "name": "OAG eSign",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": ["SigWebTablet.js"],
+    
+    "icons":{
+        "16": "extIcon16.png",
+        "48": "extIcon48.png",
+        "128": "extIcon128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "OAG eSign"
+    }
+}
